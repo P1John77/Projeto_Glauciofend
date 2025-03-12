@@ -1,67 +1,302 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas</title>
-    <!-- Google Fonts - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM GOOGLE FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css" class="css" />
+    <title>PORTIFÓLIO</title>
 
-    <div class="galaxia"></div>
-
+    <script src="menu.js" defer></script>
+  </head>
+  <body>
     <header>
-        <!-- Div para a logo da loja -->
+      <div class="interface">
         <div class="logo">
-            <img src="##" alt="Logo da Loja">
+          <a href="#">
+            <img
+              class="IMAGEM-LOGO"
+              src="Images/imagem-icone.png"
+              alt="Logo da Agency Mr.John"
+            />
+          </a>
         </div>
-        <h1>Bem-vindo à STHER CLOSET</h1>
+        <!--logo-->
+
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Especialidades</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn--contato">
+          <a href="https://w.app/LrWiEI">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn-contato-->
+
+      <div class="btn-abrir-menu" id="btn-abrir-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Especialidades</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu-mobile-->
+        <div class="overlay-menu2" id="overlaymenu2"></div>
+      </div>
+      <!--interface-->
     </header>
 
-    <!-- Carrossel de Imagens -->
-    <div class="carrossel">
-        <div class="carrossel-container">
-            <img src="##" alt="Imagem 1" class="carrossel-item">
-            <img src="##" alt="Imagem 2" class="carrossel-item">
-            <img src="##" alt="Imagem 3" class="carrossel-item">
-        </div>
-        <button class="carrossel-btn prev" onclick="moverCarrossel(-1)"><i class="bi bi-chevron-left"></i></button>
-        <button class="carrossel-btn next" onclick="moverCarrossel(1)"><i class="bi bi-chevron-right"></i></button>
-    </div>
+    <main>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>MEU PRIMEIRO PORTIFÓLIO <span>.</span></h1>
+              <p>
+                Bem-vindo ao meu primeiro portfólio! Este é o começo Cada
+                trabalho apresentado carrega dedicação e vontade de aprender
+                mais a cada passo. Este portfólio é um convite para que você
+                conheça um pouco sobre mim, meu estilo e minhas aspirações.
+                Espero que goste de navegar por ele tanto quanto gostei de
+                criá-lo! Fique à vontade para compartilhar suas emoções. Estou
+                animado para continuar evoluindo e construir algo.
+              </p>
 
-    <!-- Catálogo de Roupas -->
-    <section class="catalogo">
-        <h2>Catálogo</h2>
-        <div class="produtos">
-            <div class="produto">
-                <img src="##" alt="Produto 1">
-                <h3>Camiseta Básica</h3>
-                <p>R$ 49,90</p>
+              <div class="btn--contato">
+                <a href="https://w.app/LrWiEI">
+                  <button>Entre em Contato</button>
+                </a>
+              </div>
             </div>
-            <div class="produto">
-                <img src="##" alt="Produto 2">
-                <h3>Calça Jeans</h3>
-                <p>R$ 99,90</p>
+            <!--txt-topo-site-->
+
+            <div class="img-topo-site">
+              <img src="Images/imagem-topo.png" alt="" />
             </div>
-            <div class="produto">
-                <img src="##" alt="Produto 3">
-                <h3>Vestido Elegante</h3>
-                <p>R$ 129,90</p>
-            </div>
+            <!--img-topo-site-->
+          </div>
+          <!--flex-->
         </div>
-    </section>
+        <!--interface-->
+      </section>
+      <!--topo-do-site-->
+
+      <section class="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-code-square"></i>
+              <h3>Website</h3>
+              <p>Novos projetos chegaram em breve, Aguarde!</p>
+            </div>
+            <!--especialidades-box-->
+
+            <div class="especialidades-box">
+              <i class="bi bi-cart"></i>
+              <h3>Loja online</h3>
+              <p>logo mais nossa loja estará disponivel!</p>
+            </div>
+            <!--especialidades-box-->
+
+            <div class="especialidades-box">
+              <i class="bi bi-file-person"></i>
+              <h3>blog</h3>
+              <p>Novos projetos chegaram em breve, Aguarde!</p>
+            </div>
+            <!--especialidades-box-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--especialidades-->
+
+      <section class="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="Images/foto.png" alt="" />
+            </div>
+            <!--img-sobre-->
+
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER,<span>ME CHAMO JOHN.</span></h2>
+              <p>
+                Sou novo nesse mercado, mas estou super empolgado para aprender
+                e crescer. Sei que tem muito para absorver, mas estou
+                determinado a pegar cada oportunidade de aprendizado e usar isso
+                para criar projetos incríveis. Estou começando a explorar novas
+                tecnologias e ferramentas, e cada pequeno passo que dou me deixa
+                mais motivado para seguir em frente. O objetivo é não só
+                aprender o básico, mas realmente colocar a mão na massa e fazer
+                coisas legais que possam fazer a diferença. Estou pronto para o
+                que vier, e sei que com tempo e esforço, vou conseguir me tornar
+                bom no que faço!
+              </p>
+
+              <p>
+                Agora, estou focado em entender como as coisas realmente
+                funcionam por trás dos projetos, seja desenvolvendo meu próprio
+                código ou aprendendo a gerenciar todas as etapas de criação. A
+                ideia é ir além das teorias e realmente ver como as soluções
+                ganham vida. Sei que vou cometer erros, mas vejo isso como parte
+                do processo. Cada erro é uma chance de aprender e melhorar. Além
+                disso, quero me conectar com outros profissionais da área,
+                trocar ideias e crescer junto. Acredito que, com paciência e
+                dedicação, vou conseguir criar projetos que não só me deixem
+                orgulhoso, mas que também agreguem valor para os outros. O
+                caminho pode ser desafiador, mas estou pronto para encarar e
+                aprender com cada desafio!
+              </p>
+              <div class="btn-social">
+                <a href="https://www.instagram.com/_johnc4rlos/" target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a href="https://github.com/P1John77" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+              <!--btn-social-->
+            </div>
+            <!--txt-sobre-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--sobre-->
+
+      <section class="portfolio">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+          <div class="flex">
+            <div
+              class="img-port"
+              style="background-image: url(Images/Fundo-portifolio.jpg)"
+            >
+              <div class="overlay">EM BREVE...</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(Images/Fundo-portifolio.jpg)"
+            >
+              <div class="overlay">EM BREVE...</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(Images/Fundo-portifolio.jpg)"
+            >
+              <div class="overlay">EM BREVE...</div>
+            </div>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--portfolio-->
+
+      <section class="formulário">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+          <form action="">
+            <input
+              type="text"
+              class="text"
+              id=""
+              placeholder="Seu nome completo:"
+              required
+            />
+            <input
+              type="text"
+              class="text"
+              id=""
+              placeholder="Seu email:"
+              required
+            />
+            <input type="text" class="text" id="" placeholder="Seu celular:" />
+            <textarea
+              name=""
+              id=""
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <div class="btn-enviar">
+              <input type="text" class="submit" value="ENVIAR" />
+            </div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulário-->
+    </main>
+
     <footer>
-    <p>&copy; 2023 Loja de Roupas. Todos os direitos reservados.</p>
-    <!-- Botão do Instagram -->
-    <a href="https://www.instagram.com/sualoja" target="_blank" class="instagram-btn">
-        <i class="bi bi-instagram"></i> Siga-nos no Instagram
-    </a>
-</footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img
+                src="Images/imagem-icone.png"
+                alt="logotipo portifolio john"
+              />
+            </div>
+            <!--logo-footer-->
+            <div class="btn-social">
+              <a href="https://www.instagram.com/_johnc4rlos/" target="_blank"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a href="https://github.com/P1John77" target="_blank"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+            </div>
+            <!--btn-social-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--line-footer-->
 
-    <script src="script.js"></script>
-</body>
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:johncarlosd42@gmail.com">johncarlosd42@gmail.com</a>
+          </p>
+        </div>
+        <!--line-footer-->
+      </div>
+      <!--interface-->
+    </footer>
+  </body>
 </html>
